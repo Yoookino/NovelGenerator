@@ -1,11 +1,62 @@
-# 忽略所有生成的文本数据
-data/
-
-# 忽略环境配置文件（包含 API Key）
+# Environment and secrets
 .env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.*
 
-# 忽略 Python 缓存和虚拟环境
+# Python cache and tooling
 __pycache__/
-*.pyc
-eronovel/
+*.py[cod]
+*$py.class
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
 .venv/
+venv/
+env/
+ENV/
+eronovel/
+
+# Build and packaging
+build/
+dist/
+site/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime data and local databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.npy
+
+# Logs
+*.log
+
